@@ -1,0 +1,28 @@
+import pandas as pd
+employees = pd.read_csv("xxx.csv")
+
+df_employees = pd.DataFrame([['DoVanA', '1989-01-01','dev','2016-01-01',5000000], ['DoVanB', '1974-01-01','dev','2004-01-01',3000000]],
+     index=['person1', 'person2'],
+     columns=['name', 'dob','role','startdate','startsal'])
+
+SALARY_RATE = 1.06
+
+ages =[]
+workedYears =[]
+salaries=[]
+
+for index, row in df_employees.iterrows():
+    birtday = datetime.strptime(row['dob'], '%Y-%m-%d').date()
+    startdate = datetime.strptime(row['startdate'], '%Y-%m-%d').date()
+    age =round((today.date()-birtday).days/365)
+    ages.append(age)
+    workedYear =round((today.date()-startdate).days/365)
+    workedMonth =round((today.date()-startdate).days%365/30)
+    workedYears.append(str(workedYear) +"years "+ str(workedMonth)+"months")
+    expierencedYear = (today.date()-startdate).days/365
+    salaries.append(int(row['startsal'])*SALARY_RATE**round(expierencedYear))
+
+df_employees['ages'] = ages
+df_employees['workedYears'] = workedYears
+df_employees['salaries'] = salaries
+
