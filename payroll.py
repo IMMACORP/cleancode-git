@@ -1,7 +1,13 @@
 import pandas as pd
 from datetime import datetime
 
-employees = pd.read_csv("employee.csv")
+csvFile = 'employee.csv'
+
+try:
+    employees = pd.read_csv(csvFile)
+except IOError:
+    print("Error: can\'t find " + csvFile)
+    sys.exit(1)
 
 # Test data frame
 # df_employees = pd.DataFrame([['DoVanA', '19890101','dev','20160101',5000000], ['DoVanB', '19740101','dev','20040101',3000000]],
