@@ -208,34 +208,23 @@ Gõ link đến mã nguồn bài này vào đây
 
 22. Anti-pattern Jaywalking phù hợp trong trường hợp nào?
    ```
-      A. Cần thống kê dễ dàng.
       B. Cần lưu một danh sách các phần tử dưới dạng phân cách nhau bởi ký tự đặc biệt và không cần truy vấn từng phần tử.
-      C. A và B.
-      D. Không có đáp án nào chính xác.
    ```
 ---
 
 23. Đâu không phải là giải pháp phù hợp để thay thế cho anti-pattern Multi-column Attributes? Giả sử tôi cần lưu các tag của một article.
    ```
-      A. Tạo một bảng trung gian (join table) giữa tag và article.
       B. Lưu giá trị của các tag vào N cột trong bảng article.
-      C. Tạo một bảng riêng để lưu các tag của article.
    ```
 ---
 
 24. Nếu sử dụng anti-pattern Entity-Value-Attribute, giả sử đối tượng có 5 thuộc tính, vậy tôi cần thực hiện tất cả bao nhiêu phép JOIN để lấy đủ thông tin của 5 thuộc tính?
    ```
-      A. 1
-      B. 3
       C. 5
-      D. 6
    ```
 ---
 
 25. Tree model nào không dễ để query child node ngay dưới?
    ```
-      A. Adjacency list
-      B. Path enumeration
       C. Nested Set
-      D. Closure table
    ```
