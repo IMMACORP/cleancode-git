@@ -4,11 +4,11 @@
 
 ## Phần 1: Clean Code căn bản
 1. 5 mục tiêu chính của Clean Code là
-   - Mục tiêu 1
-   - Mục tiêu 2
-   - Mục tiêu 3
-   - Mục tiêu 4
-   - Mục tiêu 5
+   - Mục tiêu 1: Source code sạch sẽ, không thừa, không smell, không duplicate
+   - Mục tiêu 2: Làm cho code trở nên simple nhất có thể.
+   - Mục tiêu 3: Đặt tên biến, tên hàm dễ hiểu, không cần phải comment giải thích thêm.
+   - Mục tiêu 4: Dễ dàng maintain
+   - Mục tiêu 5: để ai cũng có thể dễ dàng hiểu, điều tra.
 2. Đáp án của tôi là team C bởi vì:
    - Lý do 1: Team A thì quá ưu tiên tiến độ, mà không nghĩ việc phát sinh công số refactor sau này. Thay vị thế Team C quyết định áp dụng luôn những gì có thể áp dụng được.
    - Lý do 2: Team B thì quá ưu tiên về cleancode, hơn nữa lại tiến hành tìm hiểu trước khi làm rõ các vấn đề cần giải quyết trong dự án.
