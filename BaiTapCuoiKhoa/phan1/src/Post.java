@@ -13,27 +13,15 @@ public class Post {
         return id;
     }
 
-    public String getContent() {
-        return content;
-    }
-
     public User getAuthor() {
         return author;
     }
 
-    public ArrayList<Comment> getComments() {
-        return comments;
-    }
-    public void insertPost(){
-        this.author.getPosts().add(this);
-    }
-    public void deletePost(){
-        for(int i=0;i<this.author.getPosts().size();i++){
-                if (this.author.getPosts().get(i).getId() == this.getId()){
-                    this.author.getPosts().remove(i);
-                }
-
-
-        }
+    public Post(long id, String title, String content, User author, ArrayList<Comment> comments) {
+        this.id = id;
+        this.title = title;
+        this.content = content;
+        this.author = author;
+        this.comments = comments;
     }
 }
