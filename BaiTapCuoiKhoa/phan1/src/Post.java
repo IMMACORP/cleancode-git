@@ -6,7 +6,6 @@ public class Post {
     private String content;
     private User author; //Tác giả của bài viết
     private ArrayList<Comment> comments; //Một post chứa nhiều Comment
-    //---- Bổ xung method vào đây. Nhiệm vụ của các bạn đó !
 
 
     public long getId() {
