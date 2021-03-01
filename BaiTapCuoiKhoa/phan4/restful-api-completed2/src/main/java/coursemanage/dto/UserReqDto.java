@@ -11,9 +11,6 @@ import javax.validation.constraints.NotBlank;
 @Data
 public class UserReqDto {
 
-    @ApiModelProperty(value = "User ID", example = "1")
-    private Integer id;
-
     @NotBlank
     @ApiModelProperty(value = "User name", example = "XYZ")
     private String name;
@@ -31,5 +28,10 @@ public class UserReqDto {
             "        \"experiences\": 5\n" +
             "    }")
     private TeacherDto teacher;
+    private StudentDto student;
+
+    @NotBlank
+    @ApiModelProperty(value = "User mode", example = "TEACHER or STUDENT")
+    private String mode;
 
 }

@@ -7,11 +7,8 @@ import javax.persistence.*;
 @Data
 @Entity
 
-@Table(name = "teacher")
+@Table(name = "teachers")
 public class Teacher extends User {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer id;
 
     private String phone;
 

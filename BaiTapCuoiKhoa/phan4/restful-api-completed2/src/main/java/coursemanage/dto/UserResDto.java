@@ -21,10 +21,5 @@ public class UserResDto extends RepresentationModel<UserResDto> {
     @ApiModelProperty(value = "User email", example = "xyz@gmail.com")
     private String email;
 
-    @ApiModelProperty(value = "Teacher", example = "{\n" +
-            "        \"phone\": \"0987654321\",\n" +
-            "        \"experiences\": 5\n" +
-            "    }")
-    private TeacherDto teacher;
 
 }

@@ -6,19 +6,19 @@ import javax.persistence.*;
 
 @Data
 @Entity
-@Inheritance(strategy = InheritanceType.TABLE_PER_CLASS)
+@Inheritance(strategy = InheritanceType.JOINED)
 @Table(name = "users")
 public class User {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer id;
+    protected Integer id;
 
-    private String name;
+    protected String name;
 
-    private String email;
+    protected String email;
 
-    private String password;
+    protected String password;
 
 
 
