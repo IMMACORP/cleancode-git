@@ -18,3 +18,4 @@ file csv theo format
   - Bất kỳ nhân viên nào không quan tâm đến chức vụ, cứ làm đủ 12 tháng là tăng một bậc lương 6% so với mức lương cũ. Cách tính này không cần đến đầu năm mới điều chỉnh.
   - Hãy tính lương tại thời điểm hiện tại của nhân viên
 3. Commit 1
+4. Commit 2
